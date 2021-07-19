@@ -1,0 +1,13 @@
+maxtime 		22
+maxrep			1
+saveinterval		1
+popsize			10000
+couple			no,yes
+selstr			10.0
+startmutA		0.001
+startmutB		0.001
+mutmutrate		0.001
+mutmuteffect		0.5
+envmuteffect		0.05
+envchangeinterval	0,10,100,200,1000,10000
+startswitchpoints	1.0
