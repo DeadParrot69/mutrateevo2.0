@@ -1,0 +1,17 @@
+To do mutation rate project:
+
+Environment:
+-Current = uniform
+-Implement = autocorrelated & skewed (normal?)
+
+Model versions:
+-Neutral version (coupled/uncoupled)
+-Single mutation rate version (demolished from current, study coupled/uncoupled)
+-Plastic mutation rate version (current, study only uncoupled)
+-Bet hedging version (no detection of environment, instead switch locus is coin toss, study only uncoupled)
+
+Technical side:
+-Cluster operation, keep loops over paramters, parallelize over seeds, add seed to CSV output, take out seed loop
+
+Parameters to loop over: Environmental change rate (keep current), coupled uncoupled (for single), switchpoint (3 values, 0.1, 0.5, 0.9) , mutA/mutB (mid, low , high, each all permutations), selection strength (2, 10), type of environment change. 
+
