@@ -13,7 +13,6 @@
 #include <chrono>
 
 int maxtime;
-int maxrep;
 int saveinterval;
 int popsize;
 std::string couple; //value yes or no, seperated by comma
@@ -41,7 +40,6 @@ void readParameters(const std::string& parFileName)
     ifs >> parId;
     if (ifs.good()) {
       if (parId == "maxtime") { ifs >> maxtime; }
-      else if (parId == "maxrep") { ifs >> maxrep; }
       else if (parId == "saveinterval") { ifs >> saveinterval; }
       else if (parId == "popsize") { ifs >> popsize; }
       else if (parId == "couple") { ifs >> couple; }
@@ -177,8 +175,12 @@ std::vector<double> Summarise_population(std::vector<Individual> Population) {
   return summary;
 }
 
-int main()
+int main(int argc, char** argv)
 {
+  std::mt19937_64 rng; //create rng
+  int seed = std::stoi(argv[argc - 1]);
+  rng.seed(seed);//set seed
+  
   const auto starttime = std::chrono::system_clock::now();
   std::string parameterFileName = "parameters.txt";
   readParameters(parameterFileName);
@@ -241,7 +243,7 @@ int main()
   std::vector<std::string> envtypevector = split(envtype, ",");
 
 
-  std::mt19937_64 rng; //create rng
+
 
   for (int envtype_nr = 0; envtype_nr != envtypevector.size(); envtype_nr++) {//start envtype loop
 
@@ -257,7 +259,7 @@ int main()
 
               for (int switch_nr = 0; switch_nr != StartSwitchpoints.size(); switch_nr++) {//start switchpoint loop
  
-                  rng.seed(seed);//set seed
+                  
 
                   //Output file stream
                   std::ofstream ofs1("EnvType_" + envtypevector[envtype_nr] + "_Selstr_" + std::to_string(selstrvec[selstr_nr]) + "_MutA_" + std::to_string(MutA_Start[mutA_nr])
@@ -282,7 +284,7 @@ int main()
 
                   //Initialize environment - depending on env type
                   double currentenv;
-                  if (envtypevector[envtype_nr] == "skewed") { currentenv = skewed(rng); }
+                  if (envtypevector[envtype_nr] == "Skewed") { currentenv = skewed(rng); }
                   else{ currentenv = uniform(rng); }
 
                   int timetochange = maxtime + 1; //so it will never change in the loop...
@@ -295,12 +297,27 @@ int main()
                     " Seed " << seed << ", Envchange " << envchangevector[env_nr] << ", Couple " << couplevector[couple_nr] << ", Switchpoint " << StartSwitchpoints[switch_nr] << std::endl;
 
                   for (int time = 0; time <= maxtime; time++) { //looping through time
-                    ///////// Dear future timo and jana: please continue from here!
 
 
-                      //Check if envirionment needs changing
+                    //Check if envirionment needs changing
                     if (switchcounter == timetochange && envchangevector[env_nr] != 0) {
-                      currentenv = uniform(rng);
+
+                      if(envtypevector[envtype_nr]=="Uniform"){ currentenv = uniform(rng); }
+                      if (envtypevector[envtype_nr] == "Skewed") { 
+                        currentenv = skewed(rng); 
+                        while ((currentenv < 0) | (currentenv>1)) {
+                          currentenv = skewed(rng);
+                        }
+                      }
+                      if (envtypevector[envtype_nr] == "Auto") {
+                        std::normal_distribution<double> skewed_auto(currentenv, 0.1);
+                        currentenv = skewed_auto(rng);
+                        while ((currentenv < 0) | (currentenv>1)) {
+                          currentenv = skewed_auto(rng);
+                        }
+                      }
+                      else { std::cout << "Error - env type unknown" << std::endl; }
+                      
                       std::geometric_distribution<int>geometric(1 / envchangevector[env_nr]);
                       timetochange = geometric(rng);
                       switchcounter = -1;
@@ -313,7 +330,7 @@ int main()
                     if (time != 1) {
                       if (time % saveinterval == 0 || time == 0) {
                         std::vector<double> summary = Summarise_population(Population);
-                        ofs1 << time << "," << summary[0] << "," << summary[1] << "," << summary[2] << "," << summary[3] << "," << summary[4] << "," << summary[5] << "," << summary[6] << "," << summary[7] << "," << currentenv << "," << Seed << '\n';
+                        ofs1 << time << "," << summary[0] << "," << summary[1] << "," << summary[2] << "," << summary[3] << "," << summary[4] << "," << summary[5] << "," << summary[6] << "," << summary[7] << "," << currentenv << "," << seed << '\n';
                       } //if remainder or time equal to zero
                     }//check time is not equal to one
 
@@ -321,7 +338,7 @@ int main()
                    //Calculate fitness (if environment is below or above one, then error, probability above 1 or below zero)
                     std::vector<double>fitnessvec;
                     for (int i = 0; i < Population.size(); i++) {
-                      double indivfit = pow((1 - pow((currentenv - Population[i].get_envtrait()), 2.0)), selstr);
+                      double indivfit = pow((1 - pow((currentenv - Population[i].get_envtrait()), 2.0)), selstrvec[selstr_nr]);
                       //double indivfit = 1 - abs((currentenv - Population[i].get_envtrait()));
                       fitnessvec.push_back(indivfit);
                     }

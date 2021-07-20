@@ -1,17 +1,11 @@
 ﻿  Mutrateevo2.0-Plasmut.cpp
 C:\Users\Timo van Eldijk\mutrateevo2.0\Mutrateevo2.0-Plasmut\Mutrateevo2.0-Plasmut\Mutrateevo2.0-Plasmut.cpp(149,21): warning C4018: '<': signed/unsigned mismatch
 C:\Users\Timo van Eldijk\mutrateevo2.0\Mutrateevo2.0-Plasmut\Mutrateevo2.0-Plasmut\Mutrateevo2.0-Plasmut.cpp(165,21): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Timo van Eldijk\mutrateevo2.0\Mutrateevo2.0-Plasmut\Mutrateevo2.0-Plasmut\Mutrateevo2.0-Plasmut.cpp(206,21): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Timo van Eldijk\mutrateevo2.0\Mutrateevo2.0-Plasmut\Mutrateevo2.0-Plasmut\Mutrateevo2.0-Plasmut.cpp(213,21): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Timo van Eldijk\mutrateevo2.0\Mutrateevo2.0-Plasmut\Mutrateevo2.0-Plasmut\Mutrateevo2.0-Plasmut.cpp(220,21): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Timo van Eldijk\mutrateevo2.0\Mutrateevo2.0-Plasmut\Mutrateevo2.0-Plasmut\Mutrateevo2.0-Plasmut.cpp(227,21): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Timo van Eldijk\mutrateevo2.0\Mutrateevo2.0-Plasmut\Mutrateevo2.0-Plasmut\Mutrateevo2.0-Plasmut.cpp(234,21): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Timo van Eldijk\mutrateevo2.0\Mutrateevo2.0-Plasmut\Mutrateevo2.0-Plasmut\Mutrateevo2.0-Plasmut.cpp(275,24): error C2039: 'normal_real_distribution': is not a member of 'std'
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\iomanip(23): message : see declaration of 'std'
-C:\Users\Timo van Eldijk\mutrateevo2.0\Mutrateevo2.0-Plasmut\Mutrateevo2.0-Plasmut\Mutrateevo2.0-Plasmut.cpp(275,48): error C2065: 'normal_real_distribution': undeclared identifier
-C:\Users\Timo van Eldijk\mutrateevo2.0\Mutrateevo2.0-Plasmut\Mutrateevo2.0-Plasmut\Mutrateevo2.0-Plasmut.cpp(275,55): error C2062: type 'double' unexpected
-C:\Users\Timo van Eldijk\mutrateevo2.0\Mutrateevo2.0-Plasmut\Mutrateevo2.0-Plasmut\Mutrateevo2.0-Plasmut.cpp(291,228): error C2065: 'Seed': undeclared identifier
-C:\Users\Timo van Eldijk\mutrateevo2.0\Mutrateevo2.0-Plasmut\Mutrateevo2.0-Plasmut\Mutrateevo2.0-Plasmut.cpp(311,237): error C2065: 'Seed': undeclared identifier
-C:\Users\Timo van Eldijk\mutrateevo2.0\Mutrateevo2.0-Plasmut\Mutrateevo2.0-Plasmut\Mutrateevo2.0-Plasmut.cpp(318,39): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Timo van Eldijk\mutrateevo2.0\Mutrateevo2.0-Plasmut\Mutrateevo2.0-Plasmut\Mutrateevo2.0-Plasmut.cpp(319,106): error C2065: 'selstr': undeclared identifier
-C:\Users\Timo van Eldijk\mutrateevo2.0\Mutrateevo2.0-Plasmut\Mutrateevo2.0-Plasmut\Mutrateevo2.0-Plasmut.cpp(334,39): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Timo van Eldijk\mutrateevo2.0\Mutrateevo2.0-Plasmut\Mutrateevo2.0-Plasmut\Mutrateevo2.0-Plasmut.cpp(210,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Timo van Eldijk\mutrateevo2.0\Mutrateevo2.0-Plasmut\Mutrateevo2.0-Plasmut\Mutrateevo2.0-Plasmut.cpp(217,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Timo van Eldijk\mutrateevo2.0\Mutrateevo2.0-Plasmut\Mutrateevo2.0-Plasmut\Mutrateevo2.0-Plasmut.cpp(224,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Timo van Eldijk\mutrateevo2.0\Mutrateevo2.0-Plasmut\Mutrateevo2.0-Plasmut\Mutrateevo2.0-Plasmut.cpp(231,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Timo van Eldijk\mutrateevo2.0\Mutrateevo2.0-Plasmut\Mutrateevo2.0-Plasmut\Mutrateevo2.0-Plasmut.cpp(238,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Timo van Eldijk\mutrateevo2.0\Mutrateevo2.0-Plasmut\Mutrateevo2.0-Plasmut\Mutrateevo2.0-Plasmut.cpp(342,39): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Timo van Eldijk\mutrateevo2.0\Mutrateevo2.0-Plasmut\Mutrateevo2.0-Plasmut\Mutrateevo2.0-Plasmut.cpp(358,39): warning C4018: '<': signed/unsigned mismatch
+  Mutrateevo2.0-Plasmut.vcxproj -> C:\Users\Timo van Eldijk\mutrateevo2.0\Mutrateevo2.0-Plasmut\Debug\Mutrateevo2.0-Plasmut.exe
