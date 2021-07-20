@@ -1,11 +1,11 @@
 ﻿  Mutrateevo2.0-Plasmut.cpp
-C:\Users\Timo van Eldijk\mutrateevo2.0\Mutrateevo2.0-Plasmut\Mutrateevo2.0-Plasmut\Mutrateevo2.0-Plasmut.cpp(149,21): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Timo van Eldijk\mutrateevo2.0\Mutrateevo2.0-Plasmut\Mutrateevo2.0-Plasmut\Mutrateevo2.0-Plasmut.cpp(165,21): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Timo van Eldijk\mutrateevo2.0\Mutrateevo2.0-Plasmut\Mutrateevo2.0-Plasmut\Mutrateevo2.0-Plasmut.cpp(210,21): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Timo van Eldijk\mutrateevo2.0\Mutrateevo2.0-Plasmut\Mutrateevo2.0-Plasmut\Mutrateevo2.0-Plasmut.cpp(217,21): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Timo van Eldijk\mutrateevo2.0\Mutrateevo2.0-Plasmut\Mutrateevo2.0-Plasmut\Mutrateevo2.0-Plasmut.cpp(224,21): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Timo van Eldijk\mutrateevo2.0\Mutrateevo2.0-Plasmut\Mutrateevo2.0-Plasmut\Mutrateevo2.0-Plasmut.cpp(231,21): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Timo van Eldijk\mutrateevo2.0\Mutrateevo2.0-Plasmut\Mutrateevo2.0-Plasmut\Mutrateevo2.0-Plasmut.cpp(238,21): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Timo van Eldijk\mutrateevo2.0\Mutrateevo2.0-Plasmut\Mutrateevo2.0-Plasmut\Mutrateevo2.0-Plasmut.cpp(342,39): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Timo van Eldijk\mutrateevo2.0\Mutrateevo2.0-Plasmut\Mutrateevo2.0-Plasmut\Mutrateevo2.0-Plasmut.cpp(358,39): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Timo van Eldijk\mutrateevo2.0\Mutrateevo2.0-Plasmut\Mutrateevo2.0-Plasmut\Mutrateevo2.0-Plasmut.cpp(147,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Timo van Eldijk\mutrateevo2.0\Mutrateevo2.0-Plasmut\Mutrateevo2.0-Plasmut\Mutrateevo2.0-Plasmut.cpp(163,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Timo van Eldijk\mutrateevo2.0\Mutrateevo2.0-Plasmut\Mutrateevo2.0-Plasmut\Mutrateevo2.0-Plasmut.cpp(208,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Timo van Eldijk\mutrateevo2.0\Mutrateevo2.0-Plasmut\Mutrateevo2.0-Plasmut\Mutrateevo2.0-Plasmut.cpp(215,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Timo van Eldijk\mutrateevo2.0\Mutrateevo2.0-Plasmut\Mutrateevo2.0-Plasmut\Mutrateevo2.0-Plasmut.cpp(222,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Timo van Eldijk\mutrateevo2.0\Mutrateevo2.0-Plasmut\Mutrateevo2.0-Plasmut\Mutrateevo2.0-Plasmut.cpp(229,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Timo van Eldijk\mutrateevo2.0\Mutrateevo2.0-Plasmut\Mutrateevo2.0-Plasmut\Mutrateevo2.0-Plasmut.cpp(236,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Timo van Eldijk\mutrateevo2.0\Mutrateevo2.0-Plasmut\Mutrateevo2.0-Plasmut\Mutrateevo2.0-Plasmut.cpp(344,39): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Timo van Eldijk\mutrateevo2.0\Mutrateevo2.0-Plasmut\Mutrateevo2.0-Plasmut\Mutrateevo2.0-Plasmut.cpp(360,39): warning C4018: '<': signed/unsigned mismatch
   Mutrateevo2.0-Plasmut.vcxproj -> C:\Users\Timo van Eldijk\mutrateevo2.0\Mutrateevo2.0-Plasmut\Debug\Mutrateevo2.0-Plasmut.exe

@@ -176,16 +176,15 @@ std::vector<double> Summarise_population(std::vector<Individual> Population) {
 }
 
 int main(int argc, char** argv)
+
 {
-  std::mt19937_64 rng; //create rng
-  int seed = std::stoi(argv[argc - 1]);
+ std::mt19937_64 rng; //create rng
+int seed = std::stoi(argv[argc - 1]);
   rng.seed(seed);//set seed
   
   const auto starttime = std::chrono::system_clock::now();
   std::string parameterFileName = "parameters.txt";
   readParameters(parameterFileName);
-
-  seed = 0; /////// STILL NEEDS TO BE CHANGED, READ IN FROM COMMANDLINE
 
   std::cout << "maxtime: " << maxtime << '\n'
     << "seed: " << seed << '\n'
@@ -302,14 +301,16 @@ int main(int argc, char** argv)
                     //Check if envirionment needs changing
                     if (switchcounter == timetochange && envchangevector[env_nr] != 0) {
 
-                      if(envtypevector[envtype_nr]=="Uniform"){ currentenv = uniform(rng); }
-                      if (envtypevector[envtype_nr] == "Skewed") { 
+                      if(envtypevector[envtype_nr]=="Uniform")
+                      { currentenv = uniform(rng);}
+
+                      else if (envtypevector[envtype_nr] =="Skewed") { 
                         currentenv = skewed(rng); 
                         while ((currentenv < 0) | (currentenv>1)) {
                           currentenv = skewed(rng);
                         }
                       }
-                      if (envtypevector[envtype_nr] == "Auto") {
+                      else if (envtypevector[envtype_nr] =="Auto") {
                         std::normal_distribution<double> skewed_auto(currentenv, 0.1);
                         currentenv = skewed_auto(rng);
                         while ((currentenv < 0) | (currentenv>1)) {
@@ -318,6 +319,8 @@ int main(int argc, char** argv)
                       }
                       else { std::cout << "Error - env type unknown" << std::endl; }
                       
+
+
                       std::geometric_distribution<int>geometric(1 / envchangevector[env_nr]);
                       timetochange = geometric(rng);
                       switchcounter = -1;
