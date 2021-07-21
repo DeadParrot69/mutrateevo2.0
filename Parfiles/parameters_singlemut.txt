@@ -1,0 +1,11 @@
+maxtime 		100000
+saveinterval		100
+popsize			1000
+couple			no,yes
+selstr			2.0,10.0
+startmutA		0.001,0.01,0.1
+mutmutrate		0.001
+mutmuteffect		0.5
+envmuteffect		0.05
+envchangeinterval	0,10,100,200,1000,10000
+envtype			Uniform,Skewed,Auto

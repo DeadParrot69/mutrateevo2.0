@@ -183,7 +183,7 @@ int seed = std::stoi(argv[argc - 1]);
   rng.seed(seed);//set seed
   
   const auto starttime = std::chrono::system_clock::now();
-  std::string parameterFileName = "parameters.txt";
+  std::string parameterFileName = "parameters_Plasmut.txt";
   readParameters(parameterFileName);
 
   std::cout << "maxtime: " << maxtime << '\n'

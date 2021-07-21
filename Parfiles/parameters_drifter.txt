@@ -1,0 +1,7 @@
+maxtime 		100000
+saveinterval		100
+popsize			1000
+couple			no,yes
+startmutA		0.001,0.01,0.1
+mutmutrate		0.001
+mutmuteffect		0.5

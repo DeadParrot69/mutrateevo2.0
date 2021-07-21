@@ -1,0 +1,9 @@
+﻿  Mutrateveo2.0-singlemut.cpp
+C:\Users\Timo van Eldijk\mutrateevo2.0\Mutrateveo2.0-singlemut\Mutrateveo2.0-singlemut\Mutrateveo2.0-singlemut.cpp(123,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Timo van Eldijk\mutrateevo2.0\Mutrateveo2.0-singlemut\Mutrateveo2.0-singlemut\Mutrateveo2.0-singlemut.cpp(134,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Timo van Eldijk\mutrateevo2.0\Mutrateveo2.0-singlemut\Mutrateveo2.0-singlemut\Mutrateveo2.0-singlemut.cpp(173,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Timo van Eldijk\mutrateevo2.0\Mutrateveo2.0-singlemut\Mutrateveo2.0-singlemut\Mutrateveo2.0-singlemut.cpp(181,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Timo van Eldijk\mutrateevo2.0\Mutrateveo2.0-singlemut\Mutrateveo2.0-singlemut\Mutrateveo2.0-singlemut.cpp(189,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Timo van Eldijk\mutrateevo2.0\Mutrateveo2.0-singlemut\Mutrateveo2.0-singlemut\Mutrateveo2.0-singlemut.cpp(297,37): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Timo van Eldijk\mutrateevo2.0\Mutrateveo2.0-singlemut\Mutrateveo2.0-singlemut\Mutrateveo2.0-singlemut.cpp(313,37): warning C4018: '<': signed/unsigned mismatch
+  Mutrateveo2.0-singlemut.vcxproj -> C:\Users\Timo van Eldijk\mutrateevo2.0\Mutrateveo2.0-singlemut\Debug\Mutrateveo2.0-singlemut.exe
