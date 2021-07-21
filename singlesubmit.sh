@@ -16,8 +16,8 @@
 #SBATCH --ntasks-per-node=1
 #SBATCH --ntasks=1
 #SBATCH --mem=4G
-#SBATCH --job-name=jana_%j
-#SBATCH --output=jana_%j.log
+#SBATCH --job-name=plasmut_%j
+#SBATCH --output=plasmut_%j.log
 
 
 ./CompSource $1

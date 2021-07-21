@@ -10,15 +10,15 @@
 #SBATCH --ntasks-per-node=1
 #SBATCH --ntasks=1
 #SBATCH --mem=1G
-#SBATCH --job-name=run_multiple_janas
-#SBATCH --output=multiple_janas.log
+#SBATCH --job-name=run_multiple_plasmut
+#SBATCH --output=multiple_plasmut.log
 
 module load foss/2020a
-g++ -Wall -o CompSource individual.cpp Source.cpp -std=c++17
+g++ -Wall -o CompSource Mutrateevo2.0-Plasmut.cpp -std=c++17
 
   for i in $(seq 1 30)
 do
- sbatch jana.sh $i
+ sbatch singlesubmit.sh $i
 done
 
 
